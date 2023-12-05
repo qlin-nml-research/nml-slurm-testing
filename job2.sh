@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=your-job-name
+#SBATCH --job-name=test_job
 #SBATCH --partition=debug
 #SBATCH --time=72:00:00
 
@@ -16,7 +16,7 @@
 ### change 5-digit MASTER_PORT as you wish, slurm will raise Error if duplicated with others
 ### change WORLD_SIZE as gpus/node * num_nodes
 export MASTER_PORT=12340
-export WORLD_SIZE=4
+export WORLD_SIZE=2
 
 ### get the first node name as master address - customized for vgg slurm
 ### e.g. master(gnodee[2-5],gnoded1) == gnodee2
