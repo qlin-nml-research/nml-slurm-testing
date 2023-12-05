@@ -10,7 +10,7 @@
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=2gb
-#SBATCH --chdir=/storage/qlin_data/nml-slurm-testing/out
+#SBATCH --chdir=/storage/qlin_data/nml-slurm-testing
 #SBATCH --output=/storage/qlin_data/nml-slurm-testing/out/%x-%j.out
 
 ### change 5-digit MASTER_PORT as you wish, slurm will raise Error if duplicated with others
