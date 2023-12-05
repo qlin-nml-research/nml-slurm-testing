@@ -6,8 +6,7 @@
 ### e.g. request 2 nodes with 2 gpu each, totally 4 gpus (WORLD_SIZE==4)
 ### Note: --gres=gpu:x should equal to ntasks-per-node
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=2
-#SBATCH --gres=gpu:2
+#SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=2gb
 #SBATCH --chdir=/storage/qlin_data/nml-slurm-testing
