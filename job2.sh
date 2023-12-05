@@ -10,8 +10,8 @@
 #SBATCH --gpus=7
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=2gb
-#SBATCH --chdir=/storage/qlin_data/nml-slurm-testing
-#SBATCH --output=/storage/qlin_data/nml-slurm-testing/out/%x-%j.out
+#SBATCH --chdir=/home/qlin/qlin_data/nml-slurm-testing
+#SBATCH --output=/home/qlin/qlin_data/nml-slurm-testing/out/%x-%j.out
 
 ### change 5-digit MASTER_PORT as you wish, slurm will raise Error if duplicated with others
 ### change WORLD_SIZE as gpus/node * num_nodes
