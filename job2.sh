@@ -7,7 +7,7 @@
 ### Note: --gres=gpu:x should equal to ntasks-per-node
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:5
+#SBATCH --gpus=7
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=2gb
 #SBATCH --chdir=/storage/qlin_data/nml-slurm-testing
