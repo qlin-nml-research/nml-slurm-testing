@@ -30,4 +30,4 @@ source /opt/anaconda3/etc/profile.d/conda.sh
 conda activate base
 
 ### the command to run
-srun python torchrun_test.py
+srun torchrun torchrun_test.py
