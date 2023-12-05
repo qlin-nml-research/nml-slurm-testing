@@ -9,7 +9,7 @@
 #SBATCH --ntasks-per-node=2
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=64gb
+#SBATCH --mem=2gb
 #SBATCH --chdir=/storage/qlin_data/nml-slurm-testing/out
 #SBATCH --output=/storage/qlin_data/nml-slurm-testing/out/%x-%j.out
 
