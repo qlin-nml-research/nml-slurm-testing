@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=your-job-name
-#SBATCH --partition=test
+#SBATCH --partition=debug
 #SBATCH --time=72:00:00
 
 ### e.g. request 2 nodes with 2 gpu each, totally 4 gpus (WORLD_SIZE==4)
@@ -27,8 +27,8 @@ export MASTER_ADDR=$master_addr
 echo "MASTER_ADDR="$MASTER_ADDR
 
 ### init virtual environment if needed
-source ~/anaconda3/etc/profile.d/conda.sh
-conda activate myenv
+source opt/anaconda3/etc/profile.d/conda.sh
+conda activate base
 
 ### the command to run
 srun python main.py --net resnet18 \
